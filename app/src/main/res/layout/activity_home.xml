@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="lk.peruma.tictactoe.HomeActivity">
+
+    <Button
+        android:text="Play Against Human"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonHuman"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick" />
+
+    <Button
+        android:text="Play Against Computer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonComputer"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/buttonHuman"
+        android:layout_alignLeft="@+id/buttonHuman"
+        android:layout_alignStart="@+id/buttonHuman"
+        android:onClick="onClick" />
+
+    <Button
+        android:text="About"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAbout"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/buttonComputer"
+        android:layout_alignLeft="@+id/buttonComputer"
+        android:layout_alignStart="@+id/buttonComputer"
+        android:onClick="onAboutClick" />
+
+</RelativeLayout>
