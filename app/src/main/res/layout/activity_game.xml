@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:rowCount="5"
+    tools:context="lk.peruma.tictactoe.GameActivity">
+
+    <Button
+        android:id="@+id/button00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:onClick="onClick"
+        android:text="[0][0]"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:background="?attr/colorButtonNormal"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:onClick="onClick"
+        android:text="[0][1]"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:background="?attr/colorButtonNormal"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:onClick="onClick"
+        android:text="[0][2]"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:background="?attr/colorButtonNormal"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:onClick="onClick"
+        android:text="[1][0]"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:background="?attr/colorButtonNormal"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:onClick="onClick"
+        android:text="[1][1]"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:background="?attr/colorButtonNormal"
+        android:layout_margin="5dp" />
+
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:onClick="onClick"
+        android:text="[1][2]"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:background="?attr/colorButtonNormal"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:onClick="onClick"
+        android:text="[2][0]"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:background="?attr/colorButtonNormal"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:onClick="onClick"
+        android:text="[2][1]"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:background="?attr/colorButtonNormal"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:onClick="onClick"
+        android:text="[2][2]"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:background="?attr/colorButtonNormal"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/textGameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_row="4"
+        android:gravity="center|fill"
+        android:text="Winer: "
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <Button
+        android:id="@+id/buttonNewGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_row="3"
+        android:text="New Game" />
+
+
+</GridLayout>
+
+
