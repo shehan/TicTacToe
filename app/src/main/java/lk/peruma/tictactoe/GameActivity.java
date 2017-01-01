@@ -1,17 +1,22 @@
 package lk.peruma.tictactoe;
 
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.TextView;
+
+import java.util.stream.IntStream;
 
 public class GameActivity extends AppCompatActivity {
 
     private State currentPlayer;
     private int colorCurrentPlayer,colorWinningBackground,colorDefaultBackground;
-    private boolean gameCompleted;
+    private boolean gameCompleted, vsComputer;
     private int availableSquares;
 
     private State[][] squares;
@@ -53,6 +58,31 @@ public class GameActivity extends AppCompatActivity {
         );
 
         initializeGame();
+    }
+
+    private void systemMove(){
+        int row,column;
+
+        while (true) {
+            row = (int) (Math.random() * 3 + 0);
+            column = (int) (Math.random() * 3 + 0);
+            if(squares[row][column] == State.Blank)
+            {
+                String buttonTag = "["+row+"]["+column+"]";
+
+                GridLayout grid = (GridLayout) findViewById(R.id.activity_game);
+                int count = grid.getChildCount();
+                for(int i=0;i<count;i++){
+                    View v = grid.getChildAt(i);
+                    if (v instanceof Button){
+                        if(v.getTag()!=null && v.getTag().equals(buttonTag)) {
+                            onClick(v);
+                            return;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     public void onClick(View v) {
@@ -113,6 +143,8 @@ public class GameActivity extends AppCompatActivity {
                 else {
                     changePlayer();
                     textGameStatus.setText("Current Player: "+currentPlayer.name());
+                    if(currentPlayer == State.O && vsComputer)
+                        systemMove();
                 }
             }
             else{
@@ -206,6 +238,10 @@ public class GameActivity extends AppCompatActivity {
         availableSquares = 9;
         currentPlayer = State.X;
 
+        for(int i=0;i<3;i++)
+            for(int j=0;j<3;j++)
+                squares[i][j] = State.Blank;
+
         btn00.setText("");
         btn01.setText("");
         btn02.setText("");
@@ -238,6 +274,22 @@ public class GameActivity extends AppCompatActivity {
 
 
         textGameStatus.setText("Current Player: "+currentPlayer.name());
+
+        vsComputer = getIntent().getStringExtra("GameType").equalsIgnoreCase("Computer")?true:false;
+
+        if(vsComputer){
+            setTitle("TicTacToe - Play Against Computer");
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder
+                    .setTitle("You Vs. Computer")
+                    .setMessage("You start the game. You're 'X'.\n\nGood Luck!")
+                    .setIcon(android.R.drawable.ic_dialog_info)
+                    .setPositiveButton("Close", null)
+                    .show();
+        }
+        else
+            setTitle("TicTacToe - Play Against Human");
+
     }
 
     private enum State{
