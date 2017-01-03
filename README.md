@@ -5,7 +5,7 @@ This very basic implementation of the popular game was developed using Android S
 
 
 ### Screenshots
-Following are screenshots of the app (click for larger size):
+Following are screenshots of the game (click for larger size):
 
 <table>
   <tr>
