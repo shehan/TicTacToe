@@ -1,7 +1,7 @@
 # TicTacToe
-A simple Android TicTacToe native app
+A simple TicTacToe native Android app
 
-## Screenshots
+### Screenshots
 Following are screenshots of the app:
 
 <table>
