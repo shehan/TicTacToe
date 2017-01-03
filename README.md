@@ -5,5 +5,5 @@ A simple Android TicTacToe native app
 Following are screenshots of the app:
 
 - App launcher icon
-<img src='http://imgur.com/r8hWZyo.png'  width="48">
+- - <img src='http://imgur.com/r8hWZyo.png'  width="50%" height="50%">
 
