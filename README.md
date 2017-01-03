@@ -1,8 +1,10 @@
 # TicTacToe
-A simple TicTacToe native Android app
+A simple TicTacToe game built for devices running Android.
+This very basic implementation of the popular game was developed using Android Studio. It features two game modes – Play Against Human and Play Against Computer. 
+
 
 ### Screenshots
-Following are screenshots of the app:
+Following are screenshots of the app (click for larger size):
 
 <table>
   <tr>
