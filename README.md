@@ -24,19 +24,19 @@ Following are screenshots of the app:
   </tr>
   <tr>
     <td>
-      <img src='http://imgur.com/r8hWZyo.png'  width="30%" height="30%">
+      <img src='http://imgur.com/r8hWZyo.png'  >
     </td>
       <td>
-      <img src='http://imgur.com/MfhPxpk.png'  width="30%" height="30%">
+      <img src='http://imgur.com/MfhPxpk.png'  >
     </td>
     <td>
-      <img src='http://imgur.com/8PjxquD.png'  width="30%" height="30%">
+      <img src='http://imgur.com/8PjxquD.png' >
     </td>
     <td>
-      <img src='http://imgur.com/rEtYav8.png'  width="30%" height="30%">
+      <img src='http://imgur.com/rEtYav8.png' >
     </td>
     <td>
-      <img src='http://imgur.com/dHNU2qO.png'  width="30%" height="30%">
+      <img src='http://imgur.com/dHNU2qO.png' >
     </td>
   </tr>
 </table>
